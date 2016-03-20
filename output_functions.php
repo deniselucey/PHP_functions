@@ -14,7 +14,7 @@ function output_header( $title, $stylesheet )
         '<!DOCTYPE html>
          <html lang="en">
          <head>
-		 <meta charset="utf-8" />';
+         <meta charset="utf-8" />';
     echo "<title>{$title}</title>";
     echo "<link rel=\"stylesheet\" href=\"{$stylesheet}\" />";
     echo
@@ -32,11 +32,11 @@ function output_header( $title, $stylesheet )
 function output_footer( $organization )
 {
     echo '<footer>
-		  <small>';
+          <small>';
     echo '&copy; ' . date('Y') . ' ' . $organization;
     echo
         '</small>
-		 </footer>
+         </footer>
          </body>
          </html>';
 }
@@ -72,7 +72,7 @@ function output_reset_button( $button_label )
 }
 
 /**
- * Outputs a text field for an XHTML form.
+ * Outputs a text field for an HTML form.
  *
  * Outputs a text field for an HTML form, with an accompanying label, all wapped in a div.
  * @param $id the value of the HTML id attribute
@@ -146,6 +146,3 @@ function output_ordered_list( &$items )
     echo "</ol>";
 }
 ?>
-
-
-s
